@@ -45,15 +45,7 @@ public:
 
     vector<string> restoreIpAddresses(string s)
     {
-        dfs("",4,s);/*
-        for(int i=1;i<=3 && i<s.length();i++)
-        {
-            int ip = atoi(s.substr(0,i).c_str());
-            if(ip<=255)
-            {
-                dfs(s.substr(0,i)+'.',3,s.substr(i));
-            }
-        }*/
+        dfs("",4,s);
         return result;
     }
 };
